@@ -10,7 +10,9 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts,tsx}":["pnpm format"]
+    "*.{ts,tsx}": [
+      "pnpm format"
+    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",

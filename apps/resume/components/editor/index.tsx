@@ -18,8 +18,8 @@ import {
   Toolbar,
 } from "react-simple-wysiwyg";
 import { toast } from "@repo/ui/hooks/use-toast";
-import { PromptTemplate, StringOutputParser } from "@repo/ai";
-import { googleModels } from "@repo/ai/lib/models";
+// import { PromptTemplate, StringOutputParser } from "@repo/ai";
+// import { googleModels } from "@repo/ai/lib/models";
 
 type RichTextEditorProps = {
   jobTitle: string | null;
@@ -36,7 +36,7 @@ const extractULContent = (output: string) => {
   return match ? match[0] : "";
 };
 
-const RichTextEditor = ({ 
+const RichTextEditor = ({
   jobTitle,
   initialValue,
   onEditChange,
@@ -45,10 +45,10 @@ const RichTextEditor = ({
   const [value, setValue] = useState(initialValue || undefined);
 
   // 创建 LangChain 链
-  const generateChain = PromptTemplate.fromTemplate(TEMPLATE)
-    .pipe(googleModels)
-    .pipe(new StringOutputParser())
-    .pipe(extractULContent);
+  // const generateChain = PromptTemplate.fromTemplate(TEMPLATE)
+  //   .pipe(googleModels)
+  //   .pipe(new StringOutputParser())
+  //   .pipe(extractULContent);
 
   // AI生成工作描述
   const generateSummaryFormAI = async () => {
@@ -62,11 +62,11 @@ const RichTextEditor = ({
 
     try {
       setLoading(true);
-      
-      const response = await generateChain.invoke({ jobTitle });
-      
-      setValue(response);
-      onEditChange(response);
+
+      // const response = await generateChain.invoke({ jobTitle });
+
+      // setValue(response);
+      // onEditChange(response);
     } catch (error) {
       console.error("生成描述失败:", error);
       toast({

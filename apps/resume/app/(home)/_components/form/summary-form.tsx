@@ -16,8 +16,8 @@ import { Loader, Sparkles } from "lucide-react";
 import { ResumeDataType } from "@/types/resume.type";
 import { generateThumbnail } from "@/lib/helper";
 import { useUpdateDocument } from "@/hooks/query-hooks/use-document";
-import { googleModels } from "@repo/ai/lib/models";
-import { ChatPromptTemplate, StructuredOutputParser } from "@repo/ai";
+// import { googleModels } from "@repo/ai/lib/models";
+// import { ChatPromptTemplate, StructuredOutputParser } from "@repo/ai";
 import { z } from "zod";
 
 // 定义生成摘要的数据结构
@@ -33,7 +33,7 @@ const SUMMARY_TEMPLATE = `Generate 3 resume summaries for {jobTitle} at differen
 const summarySchema = z.object({
   fresher: z.string().describe("Junior summary"),
   mid: z.string().describe("Mid-level summary"),
-  experienced: z.string().describe("Senior summary")
+  experienced: z.string().describe("Senior summary"),
 });
 
 const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
@@ -41,12 +41,13 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
   const { mutateAsync, isPending } = useUpdateDocument();
 
   const [isLoading, setIsLoading] = useState(false);
-  const [aiGenerateSummary, setAiGenerateSummary] = useState<GenerateSummaryType | null>(null);
+  const [aiGenerateSummary, setAiGenerateSummary] =
+    useState<GenerateSummaryType | null>(null);
 
   // 更新摘要内容
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     if (!resumeInfo) return;
-    
+
     onUpdate({
       ...resumeInfo,
       summary: e.target.value,
@@ -59,7 +60,9 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
     if (!resumeInfo) return;
 
     const thumbnail = await generateThumbnail();
-    const currentNo = resumeInfo.currentPosition ? resumeInfo.currentPosition + 1 : 1;
+    const currentNo = resumeInfo.currentPosition
+      ? resumeInfo.currentPosition + 1
+      : 1;
 
     try {
       await mutateAsync(
@@ -76,10 +79,10 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
             });
             handleNext();
           },
-        }
+        },
       );
     } catch (error) {
-      console.log('error', error);
+      console.log("error", error);
       toast({
         title: "保存失败",
         variant: "destructive",
@@ -92,7 +95,7 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
     try {
       setIsLoading(true);
       const jobTitle = resumeInfo?.personalInfo?.jobTitle;
-      
+
       if (!jobTitle) {
         toast({
           title: "请先填写职位名称",
@@ -101,15 +104,15 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
         return;
       }
 
-      const parser = StructuredOutputParser.fromZodSchema(summarySchema);
-      const chain = ChatPromptTemplate.fromTemplate(SUMMARY_TEMPLATE)
-        .pipe(googleModels)
-        .pipe(parser);
-      const response = await chain.invoke({
-        jobTitle,
-        format_instructions: parser.getFormatInstructions(),
-      });
-      setAiGenerateSummary(response);
+      // const parser = StructuredOutputParser.fromZodSchema(summarySchema);
+      // const chain = ChatPromptTemplate.fromTemplate(SUMMARY_TEMPLATE)
+      //   .pipe(googleModels)
+      //   .pipe(parser);
+      // const response = await chain.invoke({
+      //   jobTitle,
+      //   format_instructions: parser.getFormatInstructions(),
+      // });
+      // setAiGenerateSummary(response);
     } catch (error) {
       console.error("生成摘要失败:", error);
       toast({
@@ -129,7 +132,7 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
       ...resumeInfo,
       summary: suggestion,
     } as ResumeDataType);
-    
+
     setAiGenerateSummary(null);
   };
 
@@ -185,7 +188,9 @@ const SummaryForm = ({ handleNext }: { handleNext: () => void }) => {
           <Button
             type="submit"
             className="mt-4"
-            disabled={isPending || isLoading || resumeInfo?.status === "archived"}
+            disabled={
+              isPending || isLoading || resumeInfo?.status === "archived"
+            }
           >
             {isPending && <Loader className="animate-spin size-4" />}
             保存更改
