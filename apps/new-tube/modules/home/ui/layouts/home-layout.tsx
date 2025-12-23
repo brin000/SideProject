@@ -1,0 +1,21 @@
+import { SidebarProvider } from "@repo/ui/components/sidebar";
+import { HomeNavbar } from "../components/home-navbar";
+import { HomeSidebar } from "../components/home-sidebar";
+
+type Props = {
+  children: React.ReactNode;
+};
+
+export const HomeLayout = ({ children }: Props) => {
+  return (
+    <SidebarProvider>
+      <div className="w-full">
+        <HomeNavbar />
+        <div className="flex pt-16">
+          <HomeSidebar />
+          <main className="flex-1 overflow-y-auto">{children}</main>
+        </div>
+      </div>
+    </SidebarProvider>
+  );
+};

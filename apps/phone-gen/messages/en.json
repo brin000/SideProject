@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "language": "English",
+    "languageCode": "en",
+    "direction": "ltr"
+  },
+  "seo": {
+    "home": {
+      "title": "Phone Number Generator - China, India, US, Indonesia, Brazil, Pakistan, Nigeria, Bangladesh, Russia, Japan",
+      "description": "Easily generate phone numbers for top countries like China, India, US, Indonesia, Brazil, Pakistan, Nigeria, Bangladesh, Russia, Japan. Phone Number Generator, Perfect for testing, verification, and various applications.",
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    "slug": {
+      "title": "{country} Phone Number Generator | Free Random {country} Numbers",
+      "description": "Generate valid {country} phone numbers instantly. Free online tool to create random {country} mobile numbers. Supports all formats and area codes. Perfect for testing, development & verification.",
+      "keywords": "{country} phone numbers, {country} mobile numbers, phone number generator, random number generator, test phone numbers, {country} number format",
+      "openGraph": {
+        "title": "{country} Phone Number Generator | Create Random Numbers",
+        "description": "Generate authentic {country} phone numbers instantly. Free tool for creating valid {country} mobile numbers for testing and development."
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "{country} Phone Number Generator",
+        "description": "Create valid {country} phone numbers instantly with our free generator tool"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for might have been removed or is temporarily unavailable.",
+    "returnHome": "Return Home"
+  },
+  "app": {
+    "name": "Phone Number Generator",
+    "nav": {
+      "home": "Home"
+    },
+    "copy": {
+      "success": "Copied successfully",
+      "error": "Failed to copy"
+    },
+    "footer": {
+      "disclaimer": "This website's data is randomly generated and not real data. Users should not overly rely on the content of this website. This website does not assume any legal responsibility for the data copied from the website."
+    },
+    "home": {
+      "title": "{country} Phone Number Generator",
+      "description": "Generate valid phone numbers for {country} in one-click. Supports all {country} number formats and area codes.",
+      "button": "Generate {country} Phone Numbers"
+    },
+    "hero": {
+      "title": "{country} Phone Number Generator",
+      "description": "Generate authentic {country} phone numbers instantly. Free tool for creating valid {country} mobile numbers for testing and development."
+    },
+    "slug": {
+      "note": "Note: These numbers are randomly generated and may not be valid for actual use.",
+      "button": "Generate  Phone Numbers",
+      "generationTime": "Generation time: Generated 5 numbers in {time}ms",
+      "format": {
+        "title": "{country} Phone Number Structure",
+        "description": "Phone number format and structure for {country}",
+        "rules": "Rules"
+      },
+      "operators": {
+        "title": "Major Telecommunications Providers in {country}",
+        "prefixCodes": "Prefix Codes"
+      },
+      "virtual": {
+        "title": "Virtual Number Services in {country}",
+        "description": "Beyond traditional carriers, {country} offers various virtual number solutions:",
+        "services": {
+          "business": "Business communication platforms with integrated messaging",
+          "cloud": "Cloud-based phone systems for enterprise use",
+          "temporary": "Temporary number services for verification purposes",
+          "international": "International virtual numbers for global connectivity"
+        },
+        "note": "Note: Virtual numbers are subject to {country} telecommunications regulations and may require proper business licensing."
+      }
+    },
+    "countries": {
+      "CN": {
+        "name": "China",
+        "description": "Chinese mobile numbers use a standardized 11-digit format that includes carrier code and subscriber number:",
+        "rules": [
+          "First digit is always '1' (mobile prefix)",
+          "Next 2 digits indicate the mobile operator",
+          "Remaining 8 digits form the subscriber number"
+        ]
+      },
+      "IN": {
+        "name": "India",
+        "description": "Indian mobile numbers use a standardized 10-digit format starting with specific digits and including area codes:",
+        "rules": [
+          "Country code +91 for India",
+          "First digit ranges from 6-9",
+          "Remaining 9 digits can be any number"
+        ]
+      },
+      "US": {
+        "name": "United States",
+        "description": "US phone numbers follow the North American Numbering Plan (NANP) standard format with area code and local number:",
+        "rules": [
+          "Country code +1 for US/Canada",
+          "Area code (3 digits) cannot start with 0 or 1",
+          "Exchange code (3 digits) followed by subscriber number (4 digits)"
+        ]
+      },
+      "ID": {
+        "name": "Indonesia",
+        "description": "Indonesian mobile numbers use a 10-13 digit format starting with 8 and including provider codes:",
+        "rules": [
+          "Country code +62 for Indonesia",
+          "Starts with 8 for mobile numbers",
+          "Followed by 1-2 digits for provider code",
+          "Remaining 7-8 digits for subscriber number"
+        ]
+      },
+      "BR": {
+        "name": "Brazil",
+        "description": "Brazilian mobile numbers use a standard format with country code, area code and a 9-digit subscriber number:",
+        "rules": [
+          "Country code +55 for Brazil",
+          "Area code (2 digits) in parentheses",
+          "Mobile numbers start with 9",
+          "4 digits followed by hyphen and 4 more digits"
+        ]
+      },
+      "PK": {
+        "name": "Pakistan",
+        "description": "Pakistani mobile numbers use a standard format starting with 3 and including network codes:",
+        "rules": [
+          "Country code +92 for Pakistan",
+          "Mobile numbers start with 3",
+          "Followed by 2 digits for network code",
+          "7 digits for subscriber number"
+        ]
+      },
+      "NG": {
+        "name": "Nigeria",
+        "description": "Nigerian mobile numbers use a standard format including network code and subscriber number:",
+        "rules": [
+          "Country code +234 for Nigeria",
+          "Network code (3 digits)",
+          "Subscriber number (7 digits)",
+          "Total length of 10 digits excluding country code"
+        ]
+      },
+      "BD": {
+        "name": "Bangladesh",
+        "description": "Bangladeshi mobile numbers use a standard format starting with 1 and including operator codes:",
+        "rules": [
+          "Country code +880 for Bangladesh",
+          "Mobile numbers start with 1",
+          "Operator code (1-2 digits)",
+          "8 digits for subscriber number"
+        ]
+      },
+      "RU": {
+        "name": "Russia",
+        "description": "Russian mobile numbers use a standard format with area code and grouped subscriber numbers:",
+        "rules": [
+          "Country code +7 for Russia",
+          "Area code (3 digits) in parentheses",
+          "3 digits followed by hyphen",
+          "2 digits followed by hyphen and 2 more digits"
+        ]
+      },
+      "JP": {
+        "name": "Japan",
+        "description": "Japanese mobile numbers use country code +81, carrier code and 8 subscriber digits in 4-4 format:",
+        "rules": [
+          "Country code +81 for Japan",
+          "Mobile numbers start with specific carrier codes",
+          "Carrier code (2-3 digits)",
+          "Followed by 8 digits divided into groups of 4"
+        ]
+      }
+    }
+  }
+}

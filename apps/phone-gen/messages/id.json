@@ -1,0 +1,180 @@
+{
+  "metadata": {
+    "language": "Bahasa Indonesia",
+    "languageCode": "id",
+    "direction": "ltr"
+  },
+  "seo": {
+    "home": {
+      "title": "Generator Nomor Telepon - China, India, AS, Indonesia, Brasil, Pakistan, Nigeria, Bangladesh, Rusia, Jepang",
+      "description": "Hasilkan nomor telepon dengan mudah untuk negara-negara utama seperti China, India, AS, Indonesia, Brasil, Pakistan, Nigeria, Bangladesh, Rusia, Jepang. Generator Nomor Telepon, Sempurna untuk pengujian, verifikasi, dan berbagai aplikasi.",
+      "twitter": {
+        "card": "summary_large_image"
+      }
+    },
+    "slug": {
+      "title": "Generator Nomor Telepon {country} | Nomor {country} Acak Gratis",
+      "description": "Hasilkan nomor telepon {country} yang valid secara instan. Alat online gratis untuk membuat nomor ponsel {country} acak. Mendukung semua format dan kode area. Sempurna untuk pengujian, pengembangan & verifikasi.",
+      "keywords": "nomor telepon {country}, nomor ponsel {country}, generator nomor telepon, generator nomor acak, nomor telepon uji, format nomor {country}",
+      "openGraph": {
+        "title": "Generator Nomor Telepon {country} | Buat Nomor Acak",
+        "description": "Hasilkan nomor telepon {country} otentik secara instan. Alat gratis untuk membuat nomor ponsel {country} yang valid untuk pengujian dan pengembangan."
+      },
+      "twitter": {
+        "card": "summary_large_image",
+        "title": "Generator Nomor Telepon {country}",
+        "description": "Buat nomor telepon {country} yang valid secara instan dengan alat generator gratis kami"
+      }
+    }
+  },
+  "notFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "description": "Maaf, halaman yang Anda cari mungkin telah dihapus atau sementara tidak tersedia.",
+    "returnHome": "Kembali ke Beranda"
+  },
+  "app": {
+    "nav": {
+      "home": "Beranda"
+    },
+    "copy": {
+      "success": "Berhasil disalin",
+      "error": "Gagal menyalin"
+    },
+    "footer": {
+      "disclaimer": "Data di situs ini dihasilkan secara acak dan bukan data nyata. Pengguna tidak boleh mempercayai konten situs ini. Situs ini tidak bertanggung jawab atas data yang disalin dari situs ini."
+    },
+    "home": {
+      "title": "Generator Nomor Telepon {country}",
+      "description": "Hasilkan nomor telepon yang valid untuk {country} dalam satu klik. Mendukung semua format nomor dan kode area {country}.",
+      "button": "Hasilkan Nomor Telepon {country}"
+    },
+    "hero": {
+      "title": "Generator Nomor Telepon {country}",
+      "description": "Hasilkan nomor telepon {country} otentik secara instan. Alat gratis untuk membuat nomor ponsel {country} yang valid untuk pengujian dan pengembangan."
+    },
+    "slug": {
+      "note": "Catatan: Nomor-nomor ini dihasilkan secara acak dan mungkin tidak valid untuk penggunaan sebenarnya.",
+      "button": "Hasilkan Nomor Telepon",
+      "generationTime": "Waktu pembuatan: Menghasilkan 5 nomor dalam {time}ms",
+      "format": {
+        "title": "Struktur Nomor Telepon {country}",
+        "description": "Format dan struktur nomor telepon untuk {country}",
+        "rules": "Aturan"
+      },
+      "operators": {
+        "title": "Penyedia Telekomunikasi Utama di {country}",
+        "prefixCodes": "Kode Awalan"
+      },
+      "virtual": {
+        "title": "Layanan Nomor Virtual di {country}",
+        "description": "Selain operator tradisional, {country} menawarkan berbagai solusi nomor virtual:",
+        "services": {
+          "business": "Platform komunikasi bisnis dengan pesan terintegrasi",
+          "cloud": "Sistem telepon berbasis cloud untuk penggunaan perusahaan",
+          "temporary": "Layanan nomor sementara untuk keperluan verifikasi",
+          "international": "Nomor virtual internasional untuk konektivitas global"
+        },
+        "note": "Catatan: Nomor virtual tunduk pada peraturan telekomunikasi {country} dan mungkin memerlukan lisensi bisnis yang sesuai."
+      }
+    },
+    "countries": {
+      "CN": {
+        "name": "China",
+        "description": "Nomor ponsel China menggunakan format 11 digit standar yang mencakup kode operator dan nomor pelanggan:",
+        "rules": [
+          "Digit pertama selalu '1' (awalan ponsel)",
+          "2 digit berikutnya menunjukkan operator seluler",
+          "8 digit sisanya membentuk nomor pelanggan"
+        ]
+      },
+      "IN": {
+        "name": "India", 
+        "description": "Nomor ponsel India menggunakan format 10 digit standar yang dimulai dengan digit tertentu dan termasuk kode area:",
+        "rules": [
+          "Kode negara +91 untuk India",
+          "Digit pertama berkisar dari 6-9",
+          "9 digit sisanya bisa berupa angka apa saja"
+        ]
+      },
+      "US": {
+        "name": "Amerika Serikat",
+        "description": "Nomor telepon AS mengikuti format standar Rencana Penomoran Amerika Utara (NANP) dengan kode area dan nomor lokal:",
+        "rules": [
+          "Kode negara +1 untuk AS/Kanada",
+          "Kode area (3 digit) tidak boleh dimulai dengan 0 atau 1",
+          "Kode pertukaran (3 digit) diikuti nomor pelanggan (4 digit)"
+        ]
+      },
+      "ID": {
+        "name": "Indonesia",
+        "description": "Nomor ponsel Indonesia menggunakan format 10-13 digit yang dimulai dengan 8 dan termasuk kode provider:",
+        "rules": [
+          "Kode negara +62 untuk Indonesia",
+          "Dimulai dengan 8 untuk nomor ponsel",
+          "Diikuti 1-2 digit untuk kode provider",
+          "7-8 digit sisanya untuk nomor pelanggan"
+        ]
+      },
+      "BR": {
+        "name": "Brasil",
+        "description": "Nomor ponsel Brasil menggunakan format standar dengan kode negara, kode area dan nomor pelanggan 9 digit:",
+        "rules": [
+          "Kode negara +55 untuk Brasil",
+          "Kode area (2 digit) dalam tanda kurung",
+          "Nomor ponsel dimulai dengan 9",
+          "4 digit diikuti tanda hubung dan 4 digit lagi"
+        ]
+      },
+      "PK": {
+        "name": "Pakistan",
+        "description": "Nomor ponsel Pakistan menggunakan format standar yang dimulai dengan 3 dan termasuk kode jaringan:",
+        "rules": [
+          "Kode negara +92 untuk Pakistan",
+          "Nomor ponsel dimulai dengan 3",
+          "Diikuti 2 digit untuk kode jaringan",
+          "7 digit untuk nomor pelanggan"
+        ]
+      },
+      "NG": {
+        "name": "Nigeria",
+        "description": "Nomor ponsel Nigeria menggunakan format standar termasuk kode jaringan dan nomor pelanggan:",
+        "rules": [
+          "Kode negara +234 untuk Nigeria",
+          "Kode jaringan (3 digit)",
+          "Nomor pelanggan (7 digit)",
+          "Total panjang 10 digit tidak termasuk kode negara"
+        ]
+      },
+      "BD": {
+        "name": "Bangladesh",
+        "description": "Nomor ponsel Bangladesh menggunakan format standar yang dimulai dengan 1 dan termasuk kode operator:",
+        "rules": [
+          "Kode negara +880 untuk Bangladesh",
+          "Nomor ponsel dimulai dengan 1",
+          "Kode operator (1-2 digit)",
+          "8 digit untuk nomor pelanggan"
+        ]
+      },
+      "RU": {
+        "name": "Rusia",
+        "description": "Nomor ponsel Rusia menggunakan format standar dengan kode area dan nomor pelanggan yang dikelompokkan:",
+        "rules": [
+          "Kode negara +7 untuk Rusia",
+          "Kode area (3 digit) dalam tanda kurung",
+          "3 digit diikuti tanda hubung",
+          "2 digit diikuti tanda hubung dan 2 digit lagi"
+        ]
+      },
+      "JP": {
+        "name": "Jepang",
+        "description": "Nomor ponsel Jepang menggunakan kode negara +81, kode operator dan 8 digit pelanggan dalam format 4-4:",
+        "rules": [
+          "Kode negara +81 untuk Jepang",
+          "Nomor ponsel dimulai dengan kode operator tertentu",
+          "Kode operator (2-3 digit)",
+          "Diikuti 8 digit yang dibagi dalam kelompok 4 digit"
+        ]
+      }
+    }
+  }
+}

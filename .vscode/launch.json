@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "WEB: debug server-side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm dev",
+      "sourceMaps": true,
+      "cwd": "${workspaceFolder}/apps/web",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "cSpell.words": [
+    "changefreq",
+    "genai",
+    "kinde",
+    "neondatabase",
+    "smastrom",
+    "turbopack",
+    "uuidv"
+  ]
+}
